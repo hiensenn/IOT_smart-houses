@@ -24,7 +24,7 @@ long int codTecla3 = 16743045;
 long int codTecla4 = 16716015;
 long int codTecla5 = 16726215;
 long int codTecla6 = 16734885;
-//long int codTecla7 = 16728765;
+//long int codTecla7 = 16728765; //tecla para o portão da garegem
 //long int codTecla8 = 16730805;
 //long int codTecla9 = 16732845;
 //long int codTecla0 = 16738455;
@@ -45,8 +45,7 @@ void setup()
   Serial.begin(9600);
   //-------------------Controle Remoto
  irrecv.enableIRIn();
-  
-  
+   
 }
 
 void loop()
@@ -129,8 +128,6 @@ void loop()
      irrecv.resume();
      delay(40);
 
- 
-
     //SENSOR GÁS
   int valor_analogico = analogRead (PinA0);
   
@@ -148,7 +145,6 @@ void loop()
    }  
    
   }
-
 
 
   
